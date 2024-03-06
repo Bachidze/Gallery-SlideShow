@@ -1,13 +1,22 @@
 import { Link, useLocation } from 'react-router-dom';
-
+import { motion } from "framer-motion"
+import './Info.css'
 
 const Info = () => {
     const { state } = useLocation();
 
     return (
         <>
-            <section className='flex w-[90%] max-w-[1920px] flex-col justify-center items-center  mr-5 ml-5 xl:flex-row xl:justify-between xl:m-auto xl:mt-[100px]'>
-                <div className='xl:ml-[95px]'>
+            <section className='flex w-[90%] max-w-[1920px] flex-col justify-center items-center   mr-5 ml-5 xl:flex-row xl:justify-between md:mb-[100px] xl:m-auto xl:mt-[100px]'>
+                < motion.div initial={{
+                    opacity:0,
+                    y:'-100%'
+                }}
+                whileInView={{
+                    opacity:1,
+                    y:0
+                }}
+                className='xl:ml-[95px]'>
 
                         <div className='md:relative md:right-[90px] md:flex md:self-center'>
                             <img className='w-[327px] md:w-[475px] md:h-[560px]' src={state.images.hero.small} alt={state.name} />
@@ -16,13 +25,25 @@ const Info = () => {
                             <h1 className='text-2xl font-bold pt-6 pb-2 leading-[27px] md:text-[56px] md:leading-[64px] md:w-[300px]'>{state.name}</h1>
                             <h1 className='text-1rem text-[#7D7D7D] md:w-[295px] md:pt-6'>{state.artist.name}</h1>
                         </div>
-                        <div className='flex justify-center items-center relative bottom-14 right-[130px] md:bottom-[560px] md:left-[250px] md:mb-[-200px] xl:bottom-[330px] xl:mb-[-300px]'>
+                        <div className='flex justify-center items-center relative bottom-14 right-[130px] md:bottom-[560px] md:left-[160px] md:mb-[-250px] image2 xl:bottom-[330px] xl:mb-[-300px]'>
                             <img className='w-[64px] h-[64px]  md:w-[128px] md:h-[128px]' src={state.artist.image} alt="image" />
                         </div>
-                </div>
+                </ motion.div>
 
-                <div>
+                <motion.div 
+                initial={{
+                    y:200,
+                    opacity:0
+                }}
+                whileInView={{
+                    y:40,
+                    opacity:1
+                }}
 
+                transition={{
+                    duration:1
+                }}
+                >
                         <div>
                             <h1 className='text-8xl text-[#F3F3F3] font-bold leading-[100px] relative bottom-[75px] left-[20px] md:text-[200px] md:leading-[150px] md:left-[-90px] xl:bottom-[140px]'>{state.year}</h1>
                         </div>
@@ -32,7 +53,7 @@ const Info = () => {
                         <div className='relative left-3 xl:left-[-95px]'>
                         <Link className='text-[#7D7D7D] text-[9px] hover:text-black tracking-[2px] underline xl:tracking-[3px] xl:text-[11px]' to='/'>GO TO SOURCE</Link>
                         </div>
-                </div>
+                </motion.div>
 
             </section>
         </>

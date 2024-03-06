@@ -12,6 +12,7 @@
   
   body{
     font-family:Libre Baskerville;
+    overflow-x: hidden;
   }
 
 
@@ -96,6 +97,7 @@
     }
   }
 
+ 
   @media (width >= 1440px){
 
     .grid2{
