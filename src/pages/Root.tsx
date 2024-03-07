@@ -27,7 +27,7 @@ const Root = () => {
         whileInView={{
           x:'6%'
         }}
-        className="w-[45%] m-auto absolute left-[16px] h-[1px] bg-[gray] opacity-40 mt-8 mb-6 md:left-5 xl:left-[38px]">
+        className="w-[45%] m-auto absolute left-[9.5px] h-[1px] bg-[gray] opacity-40 mt-8 mb-6 md:left-5 xl:left-[38px]">
         </motion.div>
         <motion.div  initial={{
           x:'100%'
@@ -35,7 +35,7 @@ const Root = () => {
         whileInView={{
           x:'-5%'
         }}
-        className="w-[45%] m-auto absolute right-[16px] h-[1px] bg-[gray] opacity-40 mt-8 mb-6 md:right-5 xl:right-[38px]">
+        className="w-[45%] m-auto absolute right-[9.5px] h-[1px] bg-[gray] opacity-40 mt-8 mb-6 md:right-5 xl:right-[38px]">
         </motion.div>
         </div>
         <Outlet />
