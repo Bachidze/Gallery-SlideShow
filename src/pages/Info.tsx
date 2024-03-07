@@ -7,7 +7,7 @@ const Info = () => {
 
     return (
         <>
-            <section className='flex w-[90%] max-w-[1920px] flex-col justify-center items-center   mr-5 ml-5 xl:flex-row xl:justify-between md:mb-[100px] xl:m-auto xl:mt-[100px]'>
+            <section className='flex w-[90%] max-w-[1920px] flex-col justify-center items-center mt-[100px]  mr-5 ml-5 xl:flex-row xl:justify-between md:mb-[100px] xl:m-auto xl:mt-[100px]'>
                 < motion.div initial={{
                     opacity:0,
                     y:'-100%'
@@ -31,6 +31,7 @@ const Info = () => {
                 </ motion.div>
 
                 <motion.div 
+                className='xl:mr-[-110px]'
                 initial={{
                     y:200,
                     opacity:0

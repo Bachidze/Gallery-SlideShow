@@ -9,7 +9,7 @@ const Main = () => {
     <>
      <motion.section whileInView={{
       
-     }} className='flex flex-col max-w-[1920px] m-auto w-[90%]  gap-5 mb-10 xl:mt-[100px]   grid2'>
+     }} className='flex flex-col max-w-[1920px] m-auto w-[90%] mt-[80px]  gap-5 mb-10 xl:mt-[100px]   grid2'>
           {data.map((el,index) => (
             <motion.div 
              whileTap={{scale:0.8}} 
