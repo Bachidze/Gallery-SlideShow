@@ -27,7 +27,7 @@ const Root = () => {
         whileInView={{
           x:'6%'
         }}
-        className="w-[45%] m-auto h-[1px] bg-[gray] opacity-40 mt-8 mb-6">
+        className="w-[45%] m-auto  h-[1px] bg-[gray] opacity-40 mt-8 mb-6">
         </motion.div>
         <motion.div  initial={{
           x:'100%'

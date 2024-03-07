@@ -21,7 +21,7 @@ const Info = () => {
                         <div className='md:relative md:right-[90px] md:flex md:self-center'>
                             <img className='w-[327px] md:w-[475px] md:h-[560px]' src={state.images.hero.small} alt={state.name} />
                         </div>
-                        <div className='w-[280px] bg-white min-h-[104px] h-auto ml-[22px] relative right-9 bottom-16 md:w-[445px] md:min-h-[238px] md:h-auto md:flex md:flex-col md:items-center md:bottom-[560px] md:left-[120px] md:pb-5'>
+                        <div className='w-[280px] bg-white min-h-[104px] h-auto ml-[32px] relative right-9 bottom-16 md:w-[445px] md:min-h-[238px] md:h-auto md:flex md:flex-col md:items-center md:bottom-[560px] md:left-[120px] md:pb-5'>
                             <h1 className='text-2xl font-bold pt-6 pb-2 leading-[27px] md:text-[56px] md:leading-[64px] md:w-[300px]'>{state.name}</h1>
                             <h1 className='text-1rem text-[#7D7D7D] md:w-[295px] md:pt-6'>{state.artist.name}</h1>
                         </div>
